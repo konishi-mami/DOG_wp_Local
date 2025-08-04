@@ -49,25 +49,40 @@
     </div>
   </section>
 
-  <section class="Dog2">
-    <div class="container">
-      <h3 class="Dog2__title">DOG2</h3>
-      <ul class="Dog2List">
-        <li class="Dog2List__item">
-          <div class="Dog2List__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Dog_img_04.png" alt="犬004"></div>
-          <p class="text-area__Dog2">びっくりして見ると、半年ほど前にわが 子のように可愛がったその犬である。</p>
-        </li>
-        <li class="Dog2List__item">
-          <div class="Dog2List__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Dog_img_05.png" alt="犬005"></div>
-          <p class="text-area__Dog2">犬も夢中になって飛びつく、ぼくも暫時 われを忘れて抱きかかえて、</p>
-        </li>
-        <li class="Dog2List__item">
-          <div class="Dog2List__thumb"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Dog_img_06.png" alt="犬006"></div>
-          <p class="text-area__Dog2">また改めて伯父に頼んで飼ってもらった が、その犬の顔は今でも眼をつぶると瞼のうちに見えるようだ。</p>
-        </li>
-      </ul>
-    </div>
-  </section>
+  <?php if (have_posts()): ?>
+    <section class="Dog2">
+      <div class="container">
+        <h3 class="Dog2__title">DOG2</h3>
+        <ul class="Dog2List">
+          <?php while (have_posts()): the_post(); ?>
+            <li id="post-<?php the_ID(); ?>" <?php post_class('Dog2List__item'); ?>>
+              <a href="<?php the_permalink(); ?>">
+                <div class="Dog2List__thumb">
+                  <?php if (has_post_thumbnail()) : ?>
+                    <?php the_post_thumbnail('medium'); ?>
+                  <?php else : ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/noimage.png" alt="画像なし">
+                  <?php endif; ?>
+                </div>
+
+                <div class="Dog2List__category">
+                  <?php
+                  $categories = get_the_category();
+                  if ($categories) {
+                    foreach ($categories as $category) {
+                      echo '<span class="Dog2Category">' . esc_html($category->name) . '</span>';
+                    }
+                  }
+                  ?> <p class="text-area__Dog2">びっくりして見ると、半年ほど前にわが 子のように可愛がったその犬である。</p>
+                  <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y月m月d日'); ?></time>
+
+            </li>
+          <?php endwhile; ?>
+        </ul>
+      </div>
+    </section>
+  <?php endif; ?>
+
   </div>
   <div class="container-cover">
     <div class="overray__text">その頃、本所から四谷箪笥町たんすまち、<br>
