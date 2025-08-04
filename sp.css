@@ -1,0 +1,378 @@
+@media (max-width: 768px){
+html {
+  line-height: 1;
+}
+body{
+  margin: 0; */
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 1.2;
+  }
+.main{
+  }
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  }
+p{
+  }
+h2{
+  font-size: 20px;
+  text-align: center;
+  }
+h3{
+  font-size: 20px;
+  text-align: center;
+  }
+dl{
+  font-size: 20px;
+  padding-top: 11px;
+  margin-bottom: 11px;
+  padding-bottom: 11px;
+  border-bottom: 3px solid #AE0009;
+  }
+dd {
+  font-size: 16px;
+  }
+/*----------------------------------------
+  header
+----------------------------------------*/
+.header{
+    background-color: hwb(0 100% 0%);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    height: 50px;
+  }
+  .header__logo{
+    flex-shrink: 0;
+    width: 80px;
+    margin-left: 15px;
+    padding-top: 12px;
+  }
+  .header__logo img{
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+  }
+/*----------------------------------------
+  gnav
+----------------------------------------*/
+.gnav{
+  background: #fff;
+  display: block;
+  width: auto;
+  height: auto;
+  margin-right: 15px;
+  }
+.gnav__list{
+  /* background-color: lab(92.46% -10.58 -6.32); */
+  display: flex;
+  justify-content: space-between;
+  gap: 38px;
+}
+.gnav__item {
+  /* background-color: lch(86.69% 13.8 31.17); */
+  /* border-bottom: 1px solid #e7e7e7; */
+  color: #000;
+ }
+/*----------------------------------------
+  mainContents (mv)
+----------------------------------------*/
+.mv{
+    width: 100%;
+    height: 513px;
+    background-image: url(./img/mainvisual.png);
+    background-size: cover;
+    background-position: center;
+}
+/*----------------------------------------
+  container
+----------------------------------------*/
+.container {
+  /* background-color: lch(86.69% 13.8 31.17); */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*----------------------------------------
+  container (container-A)
+----------------------------------------*/
+.container-A{
+  padding-top: 98px;
+  padding-bottom: 67px;
+}
+.container-A__title{
+  margin-bottom: 48px;
+}
+.text-area__DogA{
+  text-align: center;
+  margin-bottom: 48px;
+  font-size: 14px;
+}
+.text-area__DogA:nth-child(4) {
+  padding-bottom: 0;
+}
+/*----------------------------------------
+  section (Dog1)
+----------------------------------------*/
+.Dog1{
+  background-color: #f9f9f9;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.Dog1__title{
+  padding-bottom: 70px;
+}
+.Dog1List{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+.Dog1List__item{
+  margin-bottom: 70px;
+}
+.Dog1List__thumb img{
+  width: 100%;
+}
+.Dog1List__text{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.Dog1List__item:last-child {
+margin-bottom: 0;
+}
+/*----------------------------------------
+  section (Dog2)
+----------------------------------------*/
+.Dog2{
+  padding-top: 70px;
+  background-color: #f9f9f9;
+  padding-bottom: 70px;
+}
+.Dog2__title{
+  padding-bottom: 49px;
+}
+.Dog2List{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding-right: 39px;
+  padding-left: 39px;
+  margin: auto;
+}
+.Dog2List__item{
+  margin-bottom: 49px;
+}
+.Dog2List__thumb img{
+  width: 100%;
+}
+.text-area__Dog2{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.text-area__Dog2:last-child{
+  margin-bottom: 0;
+}
+/*----------------------------------------
+  container-cover
+----------------------------------------*/
+.container-cover{
+  background-image: url(./img/dog_bg__sp_01.png);
+  position: relative;
+  background-size: cover;
+  height: 106vw;
+  margin-bottom: 107px;
+}
+.overray__text{
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  color: white;
+  font-size: 14px;
+  padding: 15px;
+  text-align: left;
+  z-index: 1;
+  transform: translate(-50%,-50%);
+}
+/* .container-cover{
+  background-image: url(./img/dog_bg__sp_01.png);
+  position: relative;
+  background-size: cover;
+  height: 106vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overray__text{
+  position: absolute;
+  /* top: 50%; 
+  left: 50%; 
+  color: white;
+  font-size: 14px;
+  padding: 15px 50px;
+  text-align: left;
+  z-index: 1;
+  /* transform: translate(-50%,-50%); */
+  background-color: rgba(249, 249, 249, 0.5);
+} */
+/*----------------------------------------
+  section (Dog3)
+----------------------------------------*/
+.Dog3{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.Dog3__title{
+  padding-bottom: 20px;
+}
+.Dog3List{
+  font-size: 14px;
+}
+.Dog3List__item{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid #707070;
+  font-size: 14px;
+  padding: 25px 0 15px 0;
+}
+.Dog3List__item:first-child{
+  border-top: 1px solid #707070;
+}
+.Dog3List__item:last-child {
+  border-bottom: none; /* 最後の要素のボーダーを消す */
+}
+.info{
+  display: flex; 
+  align-items: center; 
+  flex-shrink: 0;
+  margin-bottom: 10px; 
+}
+.Dog3__date{
+  font-size: 14px;
+  width: 74px;
+  text-align: center;
+  margin-right: 24px;
+}
+.Dog3__New{
+  width: 84px;
+  color:#AE0009 ;
+  padding: 6px 8px;
+  text-align: center;
+  border: 1px solid #AE0009; /* 囲み罫線を追加 (太さ: 1px, 線種: 実線, 色: #AE0009) */
+}
+.Dog3__text{
+  flex-grow: 1;
+  line-height: 1.6;
+  text-align: left;
+  padding-top: 10px;
+}
+/*----------------------------------------
+  button
+----------------------------------------*/
+.button{
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+  align-items:c enter;
+  margin-top: 20px;
+  margin-bottom: 86px;
+  border: none;
+  background-color: transparent;
+}
+.cta-btn{
+  display: inline-block;
+  width: 126px;
+  background-color: #AE0009;
+  color: #ffffff;
+  padding: 10px;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  place-items: center
+}
+/*----------------------------------------
+  footer
+----------------------------------------*/
+.footer{
+  background-color: #AFAFAF;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.footerListBlock{
+  color: #ffffff;
+  padding-bottom: 5px;
+}
+.footer__title{
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 0.5em;
+  margin-bottom: 9px;
+  font-size: 17px;
+}
+.footerList__group{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footerList__item{
+  line-height: 1.2;
+  padding-bottom: 10px;
+  color: #ffffff;
+  position: relative; /* ::before の基準位置にするため */
+  padding-left: 1.5em;
+  }
+.footerList__item::before {
+  content: "・"; /* ここで中点文字を指定 */
+  color: #ffffff; /* 箇条書きの色を白に指定 */
+  position: absolute; /* 親要素（.footerList__item）を基準に配置 */
+  left: 0;           /* 親要素の左端に配置 */
+  top: 0;            /* 親要素の上端に配置 */
+  font-size: 1.2em;  /* 箇条書きのサイズ（テキストサイズに対して大きくする） */
+  line-height: inherit; /* 親要素の行間を継承 */
+  margin-right: 0.5em; /* 箇条書きとテキストの間の右マージン */
+}
+.footerList__group:last-child {
+  padding-bottom: 0;
+}
+.footerList__item:last-child {
+padding-bottom: 0;
+}
+/*----------------------------------------
+  copylight
+----------------------------------------*/
+.copylight{
+  background-color: #797979;
+  height: 36px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; /* ★重要: これで残りのスペースを全て取り、一番下に配置される */
+  }
+}

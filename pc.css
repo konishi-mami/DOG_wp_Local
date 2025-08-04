@@ -1,0 +1,397 @@
+@media (min-width: 769px){
+html {
+  line-height: 1;
+}
+body{
+  margin: 0; */
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 1.2;
+  }
+.main{
+  }
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+p{
+}
+h2{
+  font-size: 32px;
+  text-align: center;
+}
+h3{
+  font-size: 40px;
+  text-align: center;
+}
+dl{
+  font-size: 26px;
+  padding-top: 11px;
+  margin-bottom: 11px;
+  padding-bottom: 11px;
+  border-bottom: 3px solid #AE0009;
+}
+/*----------------------------------------
+  header-PC用
+----------------------------------------*/
+  .header{
+    background-color: lab(100% 0.01 -0.01);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+  }
+  .header__logo{
+    flex-shrink: 0;
+    width: 105px;
+    margin-left: 150px;
+    padding-top: 12px;
+  }
+  .header__logo img{
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+  }
+/*----------------------------------------
+  gnav-PC用
+----------------------------------------*/
+.gnav {
+  background: #fff;
+  display: block;
+  width: auto;
+  height: auto;
+  margin-right: 150px;
+}
+.gnav__list{
+  display: flex;
+  justify-content: space-between;
+  gap: 38px;
+}
+.gnav__item {
+  /* background-color: lch(86.69% 13.8 31.17); */
+  color: #000;
+  font-size: 18px;
+}
+/*----------------------------------------
+  mainContents (mv)-PC用
+----------------------------------------*/
+.mv{
+  width: 100%;
+  height: 605px;
+  background-image: url(./img/mainvisual.png);
+  background-size: cover;
+  background-position: center;
+}
+/*----------------------------------------
+  container-PC用
+----------------------------------------*/
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 980px; /* 例:コンテンツの最大幅に合わせる */
+  margin: 0 auto;
+}
+/*----------------------------------------
+  container (container-A)-PC用
+----------------------------------------*/
+.container-A{
+  padding-top: 98px;
+  padding-bottom: 90px;
+}
+.container-A__title{
+  padding-bottom: 45px;
+}
+.text-area__DogA{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 57px;
+}
+.text-area__DogA:last-child {
+  margin-bottom: 0;
+}
+/*----------------------------------------
+  section (Dog1)-PC用
+----------------------------------------*/
+.Dog1{
+  background-color: #F9F9F9;
+  padding-top: 91px;
+  padding-bottom: 99px;
+}
+.Dog1__title{
+  padding-bottom: 84px;
+  text-align: center;
+}
+.Dog1List{
+  /* background-color: lch(84.63% 67.5 98.86); */
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 70px;
+}
+.Dog1List__item{
+  /* background-color: lch(83.32% 44.49 325.97 / 0.966); */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* 垂直方向上ぞろえ */
+  width: 100%;
+}
+.Dog1List__thumb{
+  width: 45%;
+}
+.Dog1List__thumb img{
+  width: 100%;
+  height: auto;
+  display: block; /* 画像下の余白をなくす */
+}
+.Dog1List__item:nth-child(even){
+  flex-direction: row-reverse; /*左右入れ替え*/
+}
+.Dog1List__item:last-child{
+  padding-bottom: 0;
+}
+.Dog1List__text{
+  /* background-color: rgb(161, 77, 229); */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.Dog1List__text:nth-child(even){
+}
+.Dog1__subtitle{
+  /* background-color: #4de5ab; */
+  border-bottom: 3px solid #AE0009;
+  padding-bottom: 10px; /* 下線とテキストの間の余白 */
+  margin-bottom: 10px; /* 小見出しと本文の間の余白 */
+}
+.Dog1__text-area{
+  margin-top: 10px;
+}
+/*----------------------------------------
+  section (Dog2)-PC用
+----------------------------------------*/
+.Dog2{
+  /* background-color: hsl(172, 74%, 77%); */
+  padding-top: 91px;
+  padding-bottom: 99px;
+}
+.Dog2__title{
+  padding-bottom: 59px;
+  text-align: center;
+}
+.Dog2List{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+.Dog2List__item{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+.Dog2List__thumb {
+  height: 185px;
+  overflow: hidden;
+}
+.Dog2List__thumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.text-area__Dog2{
+  padding-top: 32px;
+  flex-grow: 1;
+}
+/*----------------------------------------
+  container-cover-PC用
+----------------------------------------*/
+.container-cover{
+  background-image: url(./img/dog_bg_01.png);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  height: 431px;
+  overflow: hidden;
+}
+.overray__text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( 0%, -50%);
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  text-align: left;
+  z-index: 1; /* 画像より前面に表示 */
+  max-width: 600px;
+}
+/*----------------------------------------
+  section (Dog3)-PC用
+----------------------------------------*/
+.Dog3{
+  /* background-color: hsl(64, 73%, 78%); */
+  padding-top: 102px;
+  padding-bottom: 109px;
+}
+.Dog3__title{
+  padding-bottom: 67px;
+  font-size: 40px;
+}
+.Dog3List{
+  /* max-width: 1200px;  */
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.Dog3List__item{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 0;
+  border-bottom: 1px solid #707070;
+}
+.info {
+  display: flex; 
+  align-items: center;
+  flex-shrink: 0; 
+  margin-right: 20px; 
+  margin-bottom: 0;
+}
+.Dog3__date{
+  font-size: 16px;
+  width: 74px;
+  text-align: center;
+  margin-right: 35px;
+}
+.Dog3__New{
+  color:#AE0009 ;
+  padding: 5px 40px;
+  text-align: center;
+  border: 1px solid #AE0009;
+}
+.Dog3__text{
+  font-size: 16px;
+  flex-grow: 1;
+  line-height: 1.6;
+  text-align: left;
+}
+.Dog3List__item:first-child{
+  border-top: 1px solid #707070;
+}
+/*----------------------------------------
+  button-PC用
+----------------------------------------*/
+.button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-top: 50px;
+  border: none;
+  background-color: transparent;
+}
+.cta-btn{
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #AE0009; 
+  color: white;
+  text-decoration: none; 
+  border-radius: 5px; 
+  font-size: 18px;
+  font-weight: bold;
+}
+/*----------------------------------------
+  footer-PC用
+----------------------------------------*/
+.footer{
+  background-color: #AFAFAF;
+  padding-top: 57px;
+}
+.footer__content{
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+}
+.footerListBlock{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+.footer__title{
+  font-size: 16px;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 0.5em;
+  margin-bottom: 19px;
+}
+.footerList__group{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footerList__item{
+  color: #ffffff;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  position: relative; /* ::before の基準位置にするため */
+  padding-left: 1.5em;
+  }
+.footerList__item::before {
+  content: "・"; /* ここで中点文字を指定 */
+  color: #ffffff; /* 箇条書きの色を白に指定 */
+  position: absolute; /* 親要素（.footerList__item）を基準に配置 */
+  left: 0;           /* 親要素の左端に配置 */
+  top: 0;            /* 親要素の上端に配置 */
+  font-size: 1.2em;  /* 箇条書きのサイズ（テキストサイズに対して大きくする） */
+  line-height: inherit; /* 親要素の行間を継承 */
+  margin-right: 0.5em; /* 箇条書きとテキストの間の右マージン */
+}
+.footerList:last-child {
+  padding-bottom: 0;
+}
+/*----------------------------------------
+  copylight
+----------------------------------------*/
+.copylight{
+  background-color: #797979;
+  height: 50px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; /* ★重要: これで残りのスペースを全て取り、一番下に配置される */
+
+}
+}
+
+
+
+
