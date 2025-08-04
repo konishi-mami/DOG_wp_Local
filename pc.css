@@ -53,17 +53,32 @@ dl{
     width: 100%;
     height: 60px;
   }
-  .header__logo{
-    flex-shrink: 0;
-    width: 105px;
-    margin-left: 150px;
-    padding-top: 12px;
-  }
-  .header__logo img{
+.header__logo {
+    margin: 0; 
+    width: 130px;
+    margin-left: 50px;
+    padding-top: 5px;
+}
+.header__logo a {
+    display: flex;
+    flex-direction: row; /* 横方向に要素（画像とspan）を並べる */
+    align-items: center; /* 垂直方向（交差軸）の中央揃え */
+    text-decoration: none;
+    color: #333;
+}
+.header__logo img {
     max-width: 100%;
     height: auto;
-    align-items: center;
-  }
+    display: block; /* img要素はinline-blockなので、念のためblockに */
+}
+.header__logo span {
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap; /* テキストを強制的に改行させない */
+    align-items: center; /* 垂直方向（交差軸）の中央揃え */
+    margin-left: 10px;
+}
 /*----------------------------------------
   gnav-PC用
 ----------------------------------------*/
@@ -72,7 +87,7 @@ dl{
   display: block;
   width: auto;
   height: auto;
-  margin-right: 150px;
+  margin-right: 50px;
 }
 .gnav__list{
   display: flex;
@@ -81,6 +96,8 @@ dl{
 }
 .gnav__item {
   /* background-color: lch(86.69% 13.8 31.17); */
+}
+.gnav__item a {
   color: #000;
   font-size: 18px;
 }
@@ -90,7 +107,7 @@ dl{
 .mv{
   width: 100%;
   height: 605px;
-  background-image: url(./img/mainvisual.png);
+  background-image: url(./assets/img/mainvisual.png);
   background-size: cover;
   background-position: center;
 }

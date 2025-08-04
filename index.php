@@ -16,7 +16,13 @@
 
 <body>
   <header class="header">
-    <h1 class="header__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/header__logo.png" alt="ロゴロゴ"></h1>
+    <h1 class="header__logo">
+      <a href="<?php echo home_url(); ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header__logo.png" alt="ロゴロゴ">
+        <span><?php bloginfo('description'); ?></span>
+      </a>
+    </h1>
+
     <nav class="gnav">
       <ul class="gnav__list">
         <li class="gnav__item"><a href="#">Dog1</a></li>
