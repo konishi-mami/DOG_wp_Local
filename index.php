@@ -141,6 +141,38 @@
               </button>
     </div>
   </section>
+  <section class="Gray_content">
+    <div class="GrayListBlock">
+      <p class="Gray__title">犬は利口なもので、</p>
+      <ul class="GrayList__group">
+        <li class="GrayList__item"> 昼席、夜席へ行くときの服装 </li>
+        <li class="GrayList__item"> 魚釣りの服装ででかけるとき </li>
+        <li class="GrayList__item"> また、鉄砲を持って犬を連れてゆ </li>
+        <li class="GrayList__item"> 獲物がいると犬はすぐにポイントをする </li>
+        <li class="GrayList__item"> 銃の仕度をして </li>
+      </ul>
+    </div>
+    <div class="GrayListBlock">
+      <p class="Gray__title">犬は利口なもので、</p>
+      <ul class="GrayList__group">
+        <li class="GrayList__item"> 昼席、夜席へ行くときの服装 </li>
+        <li class="GrayList__item"> 魚釣りの服装ででかけるとき </li>
+        <li class="GrayList__item"> また、鉄砲を持って犬を連れてゆ </li>
+        <li class="GrayList__item"> 獲物がいると犬はすぐにポイントをする </li>
+        <li class="GrayList__item"> 銃の仕度をして </li>
+      </ul>
+    </div>
+    <div class="GrayListBlock">
+      <p class="Gray__title">犬は利口なもので、</p>
+      <ul class="GrayList__group">
+        <li class="GrayList__item"> 昼席、夜席へ行くときの服装 </li>
+        <li class="GrayList__item"> 魚釣りの服装ででかけるとき </li>
+        <li class="GrayList__item"> また、鉄砲を持って犬を連れてゆ </li>
+        <li class="GrayList__item"> 獲物がいると犬はすぐにポイントをする </li>
+        <li class="GrayList__item"> 銃の仕度をして </li>
+      </ul>
+    </div>
+  </section>
 </main>
 
 <?php get_footer(); ?>

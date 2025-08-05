@@ -3,7 +3,7 @@ html {
   line-height: 1;
 }
 body{
-  margin: 0; */
+  margin: 0;
 }
 *{
   margin: 0;
@@ -13,8 +13,6 @@ body{
   font-weight: 400;
   letter-spacing: 0%;
   line-height: 1.2;
-  }
-.main{
   }
 a{
   text-decoration: none;
@@ -42,7 +40,6 @@ dl{
 dd {
   font-size: 16px;
   }
-
 /*----------------------------------------
   header
 ----------------------------------------*/
@@ -114,10 +111,13 @@ dd {
 .mv{
     width: 100%;
     height: 513px;
-    background-image: url(./assets/img/mainvisual.png);
+    /* background-image: url(./assets/img/mainvisual.png); */
+    background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/mainvisual.png');
+
     background-size: cover;
     background-position: center;
 }
+
 /*----------------------------------------
   container
 ----------------------------------------*/
@@ -228,27 +228,6 @@ margin-bottom: 0;
   z-index: 1;
   transform: translate(-50%,-50%);
 }
-/* .container-cover{
-  background-image: url(./img/dog_bg__sp_01.png);
-  position: relative;
-  background-size: cover;
-  height: 106vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.overray__text{
-  position: absolute;
-  /* top: 50%; 
-  left: 50%; 
-  color: white;
-  font-size: 14px;
-  padding: 15px 50px;
-  text-align: left;
-  z-index: 1;
-  /* transform: translate(-50%,-50%); */
-  background-color: rgba(249, 249, 249, 0.5);
-} */
 /*----------------------------------------
   section (Dog3)
 ----------------------------------------*/
@@ -326,46 +305,41 @@ margin-bottom: 0;
   place-items: center
 }
 /*----------------------------------------
-  footer
+  Gray_content
 ----------------------------------------*/
-.footer{
+.Gray_content{
   background-color: #AFAFAF;
-  padding-top: 35px;
   display: flex;
   flex-direction: column;
-}
-.footer__content {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
-  max-width: 400px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding: 30px 15px 30px 15px;
 }
-.footerListBlock{
+.GrayListBlock{
   color: #ffffff;
   padding-bottom: 5px;
 }
-.footer__title{
+.Gray__title{
   border-bottom: 1px solid #ffffff;
   padding-bottom: 0.5em;
   margin-bottom: 9px;
   font-size: 17px;
 }
-.footerList__group{
+.GrayList__group{
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.footerList__item{
+.Gray__item{
   line-height: 1.2;
   padding-bottom: 10px;
   color: #ffffff;
   position: relative; /* ::before の基準位置にするため */
   padding-left: 1.5em;
   }
-.footerList__item::before {
+.Gray__item::before {
   content: "・"; /* ここで中点文字を指定 */
   color: #ffffff; /* 箇条書きの色を白に指定 */
   position: absolute; /* 親要素（.footerList__item）を基準に配置 */
@@ -375,14 +349,14 @@ margin-bottom: 0;
   line-height: inherit; /* 親要素の行間を継承 */
   margin-right: 0.5em; /* 箇条書きとテキストの間の右マージン */
 }
-.footerList__group:last-child {
+.GrayList__group:last-child {
   padding-bottom: 0;
 }
-.footerList__item:last-child {
+.GrayList__item:last-child {
 padding-bottom: 0;
 }
 /*----------------------------------------
-  copylight
+  footer
 ----------------------------------------*/
 .copylight{
   background-color: #797979;

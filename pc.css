@@ -3,7 +3,7 @@ html {
   line-height: 1;
 }
 body{
-  margin: 0; */
+  margin: 0;
 }
 *{
   margin: 0;
@@ -13,8 +13,6 @@ body{
   font-weight: 400;
   letter-spacing: 0%;
   line-height: 1.2;
-  }
-.main{
   }
 a{
   text-decoration: none;
@@ -39,7 +37,6 @@ dl{
   padding-bottom: 11px;
   border-bottom: 3px solid #AE0009;
 }
-
 /*----------------------------------------
   header-PC用
 ----------------------------------------*/
@@ -55,7 +52,7 @@ dl{
     height: 60px;
   }
 .header__logo {
-    margin: 0; 
+    margin: 0;
     width: 130px;
     margin-left: 50px;
     padding-top: 5px;
@@ -341,46 +338,43 @@ dl{
   font-weight: bold;
 }
 /*----------------------------------------
-  footer-PC用
+  Gray_content-PC用
 ----------------------------------------*/
-.footer{
+.Gray_content{
   background-color: #AFAFAF;
-  padding-top: 57px;
-}
-.footer__content{
-  padding-left: 100px;
-  padding-right: 100px;
-  max-width: 1200px;
-  margin: 0 auto;
+  /* max-width: 1200px; */
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   gap: 36px;
+  margin: 0 auto;
+  padding: 30px 15px 30px 15px;
 }
-.footerListBlock{
+.GrayListBlock{
   display: flex;
   flex-direction: column;
   padding-bottom: 80px;
 }
-.footer__title{
+.Gray__title{
   font-size: 16px;
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
   padding-bottom: 0.5em;
   margin-bottom: 19px;
 }
-.footerList__group{
+.GrayList__group{
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.footerList__item{
+.GrayList__item{
   color: #ffffff;
   padding-bottom: 10px;
   padding-left: 20px;
   position: relative; /* ::before の基準位置にするため */
   padding-left: 1.5em;
   }
-.footerList__item::before {
+.GrayList__item::before {
   content: "・"; /* ここで中点文字を指定 */
   color: #ffffff; /* 箇条書きの色を白に指定 */
   position: absolute; /* 親要素（.footerList__item）を基準に配置 */
@@ -390,11 +384,11 @@ dl{
   line-height: inherit; /* 親要素の行間を継承 */
   margin-right: 0.5em; /* 箇条書きとテキストの間の右マージン */
 }
-.footerList:last-child {
+.GrayList:last-child {
   padding-bottom: 0;
 }
 /*----------------------------------------
-  copylight
+  footer
 ----------------------------------------*/
 .copylight{
   background-color: #797979;
@@ -406,10 +400,5 @@ dl{
   justify-content: center;
   align-items: center;
   margin-top: auto; /* ★重要: これで残りのスペースを全て取り、一番下に配置される */
-
 }
 }
-
-
-
-
