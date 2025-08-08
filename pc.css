@@ -45,6 +45,7 @@ dl{
     position: fixed;
     top: 0;
     z-index: 1000;
+    margin-top: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -239,7 +240,8 @@ dl{
   container-cover-PC用
 ----------------------------------------*/
 .container-cover{
-  background-image: url(./img/dog_bg_01.png);
+  background-image: url(./assets/img/dog_bg_01.png);
+/* background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/dog_bg_01.png'); */
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;

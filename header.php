@@ -19,7 +19,6 @@
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
-
   <header class="header">
     <h1 class="header__logo">
       <a href="<?php echo home_url(); ?>">

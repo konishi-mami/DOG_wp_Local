@@ -1,36 +1,4 @@
 <footer class="footer">
-  <div class="footer__content">
-    <div class="footerListBlock">
-      <p class="footer__title">犬は利口なもので、</p>
-      <ul class="footerList__group">
-        <li class="footerList__item"> 昼席、夜席へ行くときの服装 </li>
-        <li class="footerList__item"> 魚釣りの服装ででかけるとき </li>
-        <li class="footerList__item"> また、鉄砲を持って犬を連れてゆ </li>
-        <li class="footerList__item"> 獲物がいると犬はすぐにポイントをする </li>
-        <li class="footerList__item"> 銃の仕度をして </li>
-      </ul>
-    </div>
-    <div class="footerListBlock">
-      <p class="footer__title">犬は利口なもので、</p>
-      <ul class="footerList__group">
-        <li class="footerList__item"> 昼席、夜席へ行くときの服装 </li>
-        <li class="footerList__item"> 魚釣りの服装ででかけるとき </li>
-        <li class="footerList__item"> また、鉄砲を持って犬を連れてゆ </li>
-        <li class="footerList__item"> 獲物がいると犬はすぐにポイントをする </li>
-        <li class="footerList__item"> 銃の仕度をして </li>
-      </ul>
-    </div>
-    <div class="footerListBlock">
-      <p class="footer__title">犬は利口なもので、</p>
-      <ul class="footerList__group">
-        <li class="footerList__item"> 昼席、夜席へ行くときの服装 </li>
-        <li class="footerList__item"> 魚釣りの服装ででかけるとき </li>
-        <li class="footerList__item"> また、鉄砲を持って犬を連れてゆ </li>
-        <li class="footerList__item"> 獲物がいると犬はすぐにポイントをする </li>
-        <li class="footerList__item"> 銃の仕度をして </li>
-      </ul>
-    </div>
-  </div>
   <p class="copylight">Copyright 2019 saigomadeganbatta.</p>
 </footer>
 
